@@ -9,3 +9,12 @@ html, body, #root{
   background-color: #efefef;
   height: 100%;
 }
+
+.star{
+  justify-content: flex-start;
+}
+
+.column{
+  flex-direction: column;
+  justify-content: flex-start;
+}

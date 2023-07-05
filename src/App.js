@@ -1,31 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from './components/pages/Home';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
-import NewProject from './components/pages/Newproject';
+import NewProject from './components/pages/NewProject';
+import Projeto from "./components/pages/Projeto";
 
-import Conteiner from "./components/layout/Container";
+import Container from "./components/layout/Container";
+import Navbar from "./components/layout/Navbar"
+import Footer from "./components/layout/Footer"
+
+
+
 
 function App() {
   return (
     <Router>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/company">Company</Link>
-        <Link to="/NewProject">NewProject</Link>
-      </div>
+      <Navbar/>
       <Switch>
-      <Conteiner customClass ="min-height">
+      <Container customClass ="min-height">
         <Route exact path="/" component={Home} />
         <Route exact path="/company" component={Company} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/newproject" component={NewProject} />
-        </Conteiner>
+        <Route exact path="/projeto" component={Projeto} />
+        <Route exact path="/newProject" component={NewProject} />
+        </Container>
       </Switch>
-      <p>Footer</p>
+      <Footer/>
     </Router>
   );
 }
