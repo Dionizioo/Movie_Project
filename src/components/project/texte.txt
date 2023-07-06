@@ -5,42 +5,40 @@ import SubmitButton from '../form/SubmitButton'
 
 import styles from './ProjectForm.module.css'
 
+
 function ProjectForm({ handleSubmit, btnText, projectData }) {
-  const [project, setProject] = useState(projectData || {
-    name: '',
-    budget: '',
-    category: null
-  })
+  const [project, setProject] = useState(projectData || {})
   const [categories, setCategories] = useState([])
 
+  //UseEffect- ele espera um resposta e algo vazio, se for vazio o usuario escreve e ele espera
   useEffect(() => {
     fetch('http://localhost:5000/categories', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
+      /*
+      // Conexão com o json a base de Proms
+      */
     })
       .then((resp) => resp.json())
       .then((data) => {
-        if (Array.isArray(data)) {
-          const validCategories = data.filter(
-            (category) => category.id && category.name
-          );
-          setCategories(validCategories);
-        } else {
-          console.error('A resposta do servidor não retornou um array válido de categorias.');
-        }
+        setCategories(data)
       })
-      .catch((error) => {
-        console.error('Ocorreu um erro ao obter as categorias:', error);
-      });
   }, [])
 
-  const submit = (e) => {
-    e.preventDefault()
-    handleSubmit(project)
-  }
+  /*Recapitulando oque está acontecendo aqui,
+    1.Fiz um Request,para minha url Categority
+    2.Peguei os dados da resposta e tranformei em json
+    3.E coloquei no meu Hulk de setCateries
+    */
+    
 
+  const submit = (e) => {
+    e.preventDefault() //não deixar o formulario PendingReload
+    handleSubmit(project) // excuta o metodo e passa o projeto pelo argumento
+  }
+  //indepente do input que eu mexer vai mudar a propriedade do texto
   function handleChange(e) {
     setProject({ ...project, [e.target.name]: e.target.value })
   }
@@ -62,7 +60,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         text="Nome do projeto"
         name="name"
         placeholder="Insira o nome do projeto"
-        handleOnChange={handleChange}
+        handleOnChange={handleChange} 
         value={project.name}
       />
       <Input
@@ -86,4 +84,3 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
 }
 
 export default ProjectForm
-
