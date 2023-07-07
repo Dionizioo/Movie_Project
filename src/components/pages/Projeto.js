@@ -22,7 +22,7 @@ function Projects() {
   }
 
   useEffect(() => {
-    // Para ver o loading
+    // Para ver o loading já que a maquina é assim instantaneo
     setTimeout(
       () =>
         fetch('http://localhost:5000/projects', {
@@ -36,7 +36,7 @@ function Projects() {
             setProjects(data)
             setRemoveLoading(true)
           }),
-      100,
+      100,// tempo de demora
     )
   }, [])
 
