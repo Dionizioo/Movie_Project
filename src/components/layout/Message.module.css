@@ -1,0 +1,49 @@
+.message {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+  
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+  
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/*
+width: 100%;: Define a largura dos elementos com a classe .message como 100% da largura disponível 
+dentro do seu contêiner pai. Isso significa que os elementos ocuparão todo o espaço horizontal disponível.
+
+padding: 1em;: Adiciona um preenchimento interno de 1em (unidade relativa ao tamanho da fonte) aos 
+elementos com a classe .message. Isso cria um espaço entre o conteúdo interno e a borda do elemento.
+
+border: 1px solid #000;: Define uma borda de 1px de largura e sólida com a cor preta (#000) para 
+os elementos com a classe .message. A borda aparecerá ao redor dos elementos, destacando-os visualmente.
+
+margin: 0 auto;: Define margens superior e inferior como 0 e margens esquerda e direita como "auto".
+ Isso centraliza horizontalmente os elementos com a classe .message dentro de seu contêiner pai,
+ se o contêiner tiver uma largura definida.
+
+text-align: center - texto fica no centro
+
+margin-bottom: 2em;: Define uma margem inferior de 2em (unidade relativa ao tamanho da fonte)
+ para os elementos com a classe .message. Isso cria um espaço adicional abaixo dos elementos, 
+ separando-os de outros elementos próximos.
+
+border-radius: 5px;: Define um raio de borda de 5 pixels para os elementos com a classe .message.
+ Essa propriedade arredonda os cantos das bordas dos elementos, criando um efeito de borda 
+ arredondada em vez de bordas retas.
+
+
+
+*/
