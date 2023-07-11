@@ -10,6 +10,24 @@
       "cost": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "name": "teste",
+      "budget": "5000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 500,
+      "services": [
+        {
+          "name": "hahaha",
+          "cost": "500",
+          "description": "fazer o banner",
+          "id": "df7d16c2-4bfd-4be4-a4f0-8f8cdfb8d899"
+        }
+      ],
+      "id": 2
     }
   ],
   "categories": [
