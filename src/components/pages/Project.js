@@ -104,7 +104,7 @@ function Project() {
         setType('success')
       })
   }
-
+ //Atualização do Front
   function removeService(id, cost) {
     const servicesUpdated = project.services.filter(
       (service) => service.id !== id,
@@ -113,7 +113,7 @@ function Project() {
     const projectUpdated = project
 
     projectUpdated.services = servicesUpdated
-    projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
+    projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost) // removendo o custo do servido e custo que tenho
 
     fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
       method: 'PATCH',
@@ -124,7 +124,7 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setProject(projectUpdated)
+        setProject(projectUpdated)//aqui que atualiza o estao
         setServices(servicesUpdated)
         setMessage('Serviço removido com sucesso!')
       })

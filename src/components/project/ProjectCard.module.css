@@ -37,20 +37,23 @@
     margin-right: 5px;
   }
   
-  .category_text .infra {
-    background-color: #ffaebc;
+  .category_text .ação {
+    background-color: #e8304f;
   }
   
-  .category_text .desenvolvimento {
+  .category_text .suspence {
     background-color: #a0e7e5;
   }
   
-  .category_text .design {
+  .category_text .drama {
     background-color: #b4f8c8;
   }
   
-  .category_text .planejamento {
-    background-color: #fbe7c6;
+  .category_text .terror {
+    background-color: #b709b7;
+  }
+  .category_text .comédia {
+    background-color: #0e9c18;
   }
   
   .project_card_actions {

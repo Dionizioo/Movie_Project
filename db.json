@@ -1,33 +1,90 @@
 {
   "projects": [
     {
-      "name": "Alan",
-      "budget": "70000",
+      "name": "Super 8",
+      "budget": "100000",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "1",
+        "name": "Ação"
+      },
+      "cost": 50000,
+      "services": [
+        {
+          "name": "Câmera cenográfica",
+          "cost": "30000",
+          "description": "Câmera cenográfica 500mm",
+          "id": "da6d4bd2-18df-4d41-8d63-6088b33630d3"
+        },
+        {
+          "name": "Cenário em Gerais",
+          "cost": "20000",
+          "description": "Cenário na Floresta com Trilhos de Trem",
+          "id": "9e644134-9b9a-4ebd-b596-f0d908f92f7f"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Asteroid City",
+      "budget": "5000000",
+      "category": {
+        "id": "5",
+        "name": "Comédia"
       },
       "cost": 0,
       "services": [],
-      "id": 1
+      "id": 2
+    },
+    {
+      "name": "Rosemary's Baby",
+      "budget": "4000000",
+      "category": {
+        "id": "4",
+        "name": "Terror"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Estômago ",
+      "budget": "10000000",
+      "category": {
+        "id": "2",
+        "name": "Suspence"
+      },
+      "cost": 3000,
+      "services": [
+        {
+          "name": " cenário",
+          "cost": "3000",
+          "description": "restaurante cenário",
+          "id": "4e17156f-026f-46ea-9863-fbb7d8b09811"
+        }
+      ],
+      "id": 4
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "Ação"
     },
     {
       "id": 2,
-      "name": "Desenvolvimento"
+      "name": "Suspence"
     },
     {
       "id": 3,
-      "name": "Design"
+      "name": "Drama"
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "name": "Terror"
+    },
+    {
+      "id": 5,
+      "name": "Comédia"
     }
   ]
 }

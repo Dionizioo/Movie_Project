@@ -75,7 +75,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
       />
       <Select
         name="category_id"
-        text="Selecione a categoria"
+        text="Selecione a categoria do seu filme"
         options={categories}
         handleOnChange={handleCategory}
         value={project.category ? project.category.id : ''}

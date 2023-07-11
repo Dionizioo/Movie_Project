@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './components/pages/Home';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
-import Newproject from './components/pages/NewProject'
 import Projeto from "./components/pages/Projeto";
 import Project from "./components/pages/Project";
+import Newproject from './components/pages/NewProject'
 
 import Container from "./components/layout/Container";
 import Navbar from "./components/layout/Navbar"

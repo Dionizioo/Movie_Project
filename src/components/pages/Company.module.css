@@ -1,0 +1,49 @@
+.company_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+  
+.company_container h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+  
+.company_container h1 span {
+    color: #ffbb33;
+    padding: 0 0.2em;
+    background-color: #222;
+  }
+  
+.company_container p {
+    margin-bottom: 1.5em;
+    color: #7b7b7b;
+}
+  
+.company_container img {
+    width: 150px;
+    margin: 2em 0;
+}
+
+.social_list {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .social_list li {
+    margin: 0 1em;
+  }
+  
+  .social_list li:hover {
+    color: #ffbb33;
+  }
+  
+  .social_list svg {
+    font-size: 1.5em;
+    cursor: pointer;
+  }

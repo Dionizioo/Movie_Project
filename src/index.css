@@ -1,20 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-html, body, #root{
+html,
+body,
+#root {
   background-color: #efefef;
   height: 100%;
-}
-
-.star{
-  justify-content: flex-start;
-}
-
-.column{
-  flex-direction: column;
-  justify-content: flex-start;
 }
