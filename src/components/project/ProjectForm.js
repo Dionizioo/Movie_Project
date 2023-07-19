@@ -9,7 +9,8 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [project, setProject] = useState(projectData || {
     name: '',
     budget: '',
-    category: null
+    category: null,
+    director: '', // Novo campo para o nome do diretor
   })
   const [categories, setCategories] = useState([])
 
@@ -64,6 +65,14 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         placeholder="Insira o nome do projeto"
         handleOnChange={handleChange}
         value={project.name}
+      />
+      <Input
+        type="text"
+        text="Nome do Diretor"
+        name="director"
+        placeholder="Insira o nome do diretor"
+        handleOnChange={handleChange}
+        value={project.director}
       />
       <Input
         type="number"

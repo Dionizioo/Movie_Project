@@ -22,7 +22,8 @@
           "id": "9e644134-9b9a-4ebd-b596-f0d908f92f7f"
         }
       ],
-      "id": 1
+      "id": 1,
+      "director": "J. J. Abrams"
     },
     {
       "name": "Asteroid City",
@@ -33,7 +34,8 @@
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 2,
+      "director": "Wes Anderson"
     },
     {
       "name": "Rosemary's Baby",
@@ -44,7 +46,8 @@
       },
       "cost": 0,
       "services": [],
-      "id": 3
+      "id": 3,
+      "director": "Roman Polanski"
     },
     {
       "name": "Estômago ",
@@ -62,7 +65,27 @@
           "id": "4e17156f-026f-46ea-9863-fbb7d8b09811"
         }
       ],
-      "id": 4
+      "id": 4,
+      "director": "Marcos Jorge"
+    },
+    {
+      "name": "Barbie",
+      "budget": "1000000",
+      "category": {
+        "id": "5",
+        "name": "Comédia"
+      },
+      "director": "Greta",
+      "cost": 50000,
+      "services": [
+        {
+          "name": "camera",
+          "cost": "50000",
+          "description": "camera 50cm",
+          "id": "91360f6b-5e9a-4d90-9af9-bda6f2938b61"
+        }
+      ],
+      "id": 5
     }
   ],
   "categories": [

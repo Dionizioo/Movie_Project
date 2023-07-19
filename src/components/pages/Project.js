@@ -152,6 +152,9 @@ function Project() {
               {!showProjectForm ? (
                 <div className={styles.form}>
                   <p>
+                    <span>Diretor:</span> {project.director}
+                  </p>
+                  <p>
                     <span>Categoria:</span> {project.category.name}
                   </p>
                   <p>
@@ -211,3 +214,4 @@ function Project() {
 }
 
 export default Project
+

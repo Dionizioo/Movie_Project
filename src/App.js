@@ -6,7 +6,8 @@ import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import Projeto from "./components/pages/Projeto";
 import Project from "./components/pages/Project";
-import Newproject from './components/pages/NewProject'
+import Newproject from './components/pages/Newproject'
+
 
 import Container from "./components/layout/Container";
 import Navbar from "./components/layout/Navbar"

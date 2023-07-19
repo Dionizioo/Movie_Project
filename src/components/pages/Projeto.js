@@ -70,6 +70,7 @@ function Projects() {
               name={project.name}
               budget={project.budget}
               category={project.category.name}
+              director={project.director}
               key={project.id}
               handleRemove={removeProject}
             />

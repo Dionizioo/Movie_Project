@@ -4,14 +4,15 @@ import SubmitButton from '../form/SubmitButton'
 
 import styles from '../project/ProjectForm.module.css'
 
+
 function ServiceForm({ handleSubmit, btnText, projectData }) {
-  const [service, setService] = useState({}) 
+  const [service, setService] = useState({})
 
   const submit = (e) => {
     e.preventDefault()
     projectData.services.push(service)
-    handleSubmit(projectData) //manipula os dados do projeto,adcionando o serviço e "joga" o projeto para cima
-    //onde vai lidar com a funtion createService(Projects.js)
+    handleSubmit(projectData) // manipula os dados do projeto,adicionando o serviço e "joga" o projeto para cima
+    //onde vai lidar com a função createService(Projects.js)
   }
 
   function handleChange(e) {
@@ -38,7 +39,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
         type="text"
         text="Descrição do projeto"
         name="description"
-        placeholder="Descreva o serviço"
+        placeholder="Descreva o projeto"
         handleOnChange={handleChange}
       />
       <SubmitButton text={btnText} />
@@ -47,3 +48,10 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
 }
 
 export default ServiceForm
+
+
+/*
+ProjectForm.js(input) 
+ProjectCard(function(director)p(span"director"))
+ Project.js ( <p>project.director) 
+*/
